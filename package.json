@@ -7,7 +7,7 @@
         "start": "node -r ts-node/register src/index",
         "watch": "nodemon --watch src/**/*.ts -r ts-node/register src/index.ts",
         "test": "mocha -r ts-node/register test/**/*.spec.ts",
-        "nyc": "nyc --extension .ts --reporter=html npm test",
+        "cover": "nyc --extension .ts --reporter=html npm test",
         "format": "tsfmt -r",
         "build": "shx rm -rf build && tsc -p tsconfig.build.json",
         "clean": "shx rm -rf node_modules build"
