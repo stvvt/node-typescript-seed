@@ -1,39 +1,40 @@
 {
-  "name": "node-typescript-seed",
-  "version": "0.1.0",
-  "description": "Personal starter project for node apps written in typescript",
-  "main": "index.js",
-  "scripts": {
-    "start": "node -r ts-node/register src/index",
-    "watch": "nodemon --watch src/**/*.ts -r ts-node/register src/index.ts",
-    "test": "mocha -r ts-node/register test/**/*.spec.ts",
-    "format": "tsfmt -r",
-    "build": "shx rm -rf build && tsc -p tsconfig.build.json",
-    "clean": "shx rm -rf node_modules build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stvvt/node-typescript-seed.git"
-  },
-  "keywords": [],
-  "author": "Stefan Stefanov <stefan.bg@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stvvt/node-typescript-seed/issues"
-  },
-  "homepage": "https://github.com/stvvt/node-typescript-seed#readme",
-  "devDependencies": {
-    "@types/chai": "^4.0.0",
-    "@types/mocha": "^2.2.41",
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2",
-    "nodemon": "^1.11.0",
-    "nyc": "^11.0.2",
-    "shx": "^0.2.2",
-    "ts-node": "^3.0.6",
-    "tslint": "^5.4.3",
-    "typedoc": "^0.7.1",
-    "typescript": "^2.3.4",
-    "typescript-formatter": "^5.2.0"
-  }
+    "name": "node-typescript-seed",
+    "version": "0.1.0",
+    "description": "Personal starter project for node apps written in typescript",
+    "main": "index.js",
+    "scripts": {
+        "start": "node -r ts-node/register src/index",
+        "watch": "nodemon --watch src/**/*.ts -r ts-node/register src/index.ts",
+        "test": "mocha -r ts-node/register test/**/*.spec.ts",
+        "nyc": "nyc --extension .ts --reporter=html npm test",
+        "format": "tsfmt -r",
+        "build": "shx rm -rf build && tsc -p tsconfig.build.json",
+        "clean": "shx rm -rf node_modules build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stvvt/node-typescript-seed.git"
+    },
+    "keywords": [],
+    "author": "Stefan Stefanov <stefan.bg@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/stvvt/node-typescript-seed/issues"
+    },
+    "homepage": "https://github.com/stvvt/node-typescript-seed#readme",
+    "devDependencies": {
+        "@types/chai": "^4.0.0",
+        "@types/mocha": "^2.2.41",
+        "chai": "^4.0.2",
+        "mocha": "^3.4.2",
+        "nodemon": "^1.11.0",
+        "nyc": "^11.0.2",
+        "shx": "^0.2.2",
+        "ts-node": "^3.0.6",
+        "tslint": "^5.4.3",
+        "typedoc": "^0.7.1",
+        "typescript": "^2.3.4",
+        "typescript-formatter": "^5.2.0"
+    }
 }
