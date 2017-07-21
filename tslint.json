@@ -19,6 +19,19 @@
         ],
         "ordered-imports": [
             false
+        ],
+        "no-namespace": [
+            false
+        ],
+        "max-classes-per-file": [
+            false
+        ],
+        "interface-name": [
+            false
+        ],
+        "object-literal-sort-keys": false,
+        "trailing-comma": [
+            false
         ]
     },
     "rulesDirectory": []
